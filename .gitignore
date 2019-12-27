@@ -3,6 +3,7 @@
 
 # build artefacts
 /dist
+/build
 .netlify
 
 # secrets and errors
@@ -10,8 +11,13 @@
 .sass-cache
 .log
 
-
 # macOS related files
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# Hide design tokens
+src/scss/_tokens.scss
+
+# Hide compiled CSS
+src/_includes/assets/*
