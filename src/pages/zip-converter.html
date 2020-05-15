@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Character Counter</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<script src="https://kit.fontawesome.com/94c3c10f9c.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="navbar nav">
+			<a id="menu-button"><i class="fas fa-bars fa-lg has-text-black"></i></a>
+		</nav>
+		<aside id="mobile-menu" class="menu">
+			<a id="menu-close"><i class="fas fa-times-circle fa-lg"></i></a>
+			<p class="menu-label">
+				<a href="../index.html">Tools</a>
+			</p>
+			<ul class="menu-list">
+				<li><a href="calculator.html">Calculator</a></li>
+				<li><a href="character-count.html">Character Counter</a></li>
+				<li><a href="letter-count.html">Letter Counter</a></li>
+				<li><a href="word-count.html">Word Counter</a></li>
+				<li><a href="html-to-text-convertor.html">HTML-to-Text Convertor</a></li>
+				<li><a href="url-parameter.html">URL Parameter Generator</a></li>
+				<li><a href="social-share.html">Social Share Generator</a></li>
+			</ul>
+		</aside>
+		<section class="section">
+			<div class="container">
+				<h1 class="title has-text-white">Zip Converter</h1>
+				<p class="subtitle has-text-white">Covert Zips to be used in Sailthru.</p>
+			</div>
+			<div class="container">
+				<form id="zipConverter">
+					<div class="field">
+						<label class="label">Input</label>
+						<div class="control">
+							<textarea class="textarea" placeholder="Enter message here..." id="zipinput" autofocus required></textarea>
+						</div>
+					</div>
+					<div class="field is-grouped is-grouped-right">
+						<p class="control">
+							<button id="submit-button" class="button is-primary">
+								Submit
+							</button>
+						</p>
+						<p class="control">
+							<input type="reset" value="Reset" id="reset-button" class="button is-light" />
+						</p>
+					</div>
+				</form>
+			</div>
+			<div class="container">
+				<div class="field">
+					<label class="label">Output</label>
+					<div class="control">
+						<textarea class="textarea" placeholder="Enter message here..." id="textoutput" autofocus required></textarea>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="../app.js"></script>
+	</body>
+</html>

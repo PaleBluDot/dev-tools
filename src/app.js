@@ -1,5 +1,7 @@
 const message = document.querySelector('#textinput');
+const zipInput = document.querySelector('#input');
 const form = document.querySelector('#textbox');
+const zips = document.querySelector('#zipConverter');
 const reset = document.querySelector('#reset-button');
 const countOutput = document.querySelector('#countOutput');
 const mobileMenu = document.querySelector('#mobile-menu');
@@ -49,5 +51,11 @@ reset.addEventListener('click', function(e) {
 });
 
 /* ==============================
-@Word Count
+@Zip Converter
 ============================== */
+// *Get Zips
+zips.addEventListener('submit', function(e) {
+	e.preventDefault();
+	const zipVal = zipInput.value;
+	console.log(zipVal);
+});
